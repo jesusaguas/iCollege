@@ -1,10 +1,3 @@
-//
-//  NextViewController.swift
-//  iCollege
-//
-//  Created by Aitor Sola on 11/12/2019.
-//  Copyright © 2019 Jesus Aguas Acin. All rights reserved.
-//
 
 import UIKit
 
@@ -14,17 +7,30 @@ class NextViewController: UIViewController {
     
     
     @IBOutlet weak var DateLabel: UILabel!
+    @IBOutlet weak var textField: UITextField!
+    
+
+    @IBOutlet weak var Notes: UILabel!
     
     
-    @IBOutlet weak var textFieldOne: UITextField!
+    
+    var result: String!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         DateLabel.text = dateString
+        
     }
     
 
+    @IBAction func SubmitText(_ sender: Any) {
+        writeText()
+    }
     
-    
+    func writeText(){
+        result = textField.text
+        Notes.text = result
+        dismiss(animated: true, completion: nil)
+    }
 }

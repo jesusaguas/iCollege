@@ -1,9 +1,16 @@
-//
-//  Animations.swift
-//  iCollege
-//
-//  Created by Aitor Sola on 11/12/2019.
-//  Copyright © 2019 Jesus Aguas Acin. All rights reserved.
-//
-
 import Foundation
+
+import UIKit
+
+func MoveAnimationNext(Label: UILabel){
+    let PositionAnimation = CABasicAnimation(keyPath: "position")
+    PositionAnimation.fromValue = NSValue(cgPoint)
+    PositionAnimation.fromValue = NSValue(cgPoint: <#T##CGPoint#>(x: Label.center.x + 70, y:Label.center.y))
+    
+    let fadeAnimation = CABasicAnimation(keyPath: "opacity")
+    
+}
+
+func MoveAnimationBack(Label: UILabel){
+    
+}

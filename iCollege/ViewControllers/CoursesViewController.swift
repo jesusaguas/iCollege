@@ -1,30 +1,51 @@
-//
-//  CoursesViewController.swift
-//  iCollege
-//
-//  Created by Aitor Sola on 11/12/2019.
-//  Copyright © 2019 Jesus Aguas Acin. All rights reserved.
-//
+
 
 import UIKit
 
-class CoursesViewController: UIViewController {
 
+
+
+class CoursesViewController: UIViewController {
+    
+    
+    @IBAction func Add(_ sender: Any) {
+    }
+    @IBOutlet weak var Course1: UILabel!
+    @IBOutlet weak var Course2: UILabel!
+    @IBOutlet weak var Course3: UILabel!
+    @IBOutlet weak var Course4: UILabel!
+    @IBOutlet weak var Course5: UILabel!
+    @IBOutlet weak var Course6: UILabel!
+    
+    
+    
+    
+    
+    
     override func viewDidLoad() {
+        
+        if Course1.text == ""{
+            Course1.text = newCourse
+        }else if Course2.text == ""{
+            Course2.text = newCourse
+        }else if Course3.text == ""{
+            Course3.text = newCourse
+        }else if Course4.text == ""{
+            Course4.text = newCourse
+        }else if Course5.text == ""{
+            Course5.text = newCourse
+        }else if Course6.text == ""{
+            Course6.text = newCourse
+        }
+        
+        
+        
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        
     }
     
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
+    
 
 }
