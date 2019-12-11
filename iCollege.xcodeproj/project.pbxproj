@@ -66,8 +66,8 @@
 			children = (
 				C72178CA239F4F680085EB6D /* Calendar */,
 				70C8E50B239F46EB00FA3C9C /* ViewControllers */,
-				702E6367239F418A0075F0F9 /* LaunchScreen.storyboard */,
 				A44409A923A0D89500417DAB /* Main.storyboard */,
+				702E6367239F418A0075F0F9 /* LaunchScreen.storyboard */,
 				702E6365239F418A0075F0F9 /* Assets.xcassets */,
 				70C8E50A239F46B700FA3C9C /* Settings */,
 			);
@@ -326,7 +326,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = jesusaguas.iCollege;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -344,7 +344,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = jesusaguas.iCollege;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

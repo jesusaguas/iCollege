@@ -1,18 +1,117 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Hl6-Pk-95J">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="mSN-ig-NpV">
     <device id="retina5_9" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
+        <scene sceneID="Hrq-xE-ebJ">
+            <objects>
+                <viewController id="mSN-ig-NpV" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="tMT-Do-Kns">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="iTunesArtwork" translatesAutoresizingMaskIntoConstraints="NO" id="3d2-pX-w1E">
+                                <rect key="frame" x="-68.666666666666686" y="127" width="512.33333333333337" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="512.33000000000004" id="s50-50-vde"/>
+                                    <constraint firstAttribute="height" constant="128" id="xCr-KB-ru3"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="iCollege" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QsE-94-ksF">
+                                <rect key="frame" x="134.66666666666666" y="263" width="106" height="36"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="106" id="EE5-WK-G9F"/>
+                                    <constraint firstAttribute="height" constant="36" id="ywD-TD-pBt"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <color key="textColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sw6-g2-oow">
+                                <rect key="frame" x="67.666666666666686" y="344" width="240" height="62"/>
+                                <color key="backgroundColor" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="62" id="V3g-Cr-cFK"/>
+                                    <constraint firstAttribute="width" constant="240" id="r7P-7E-40Z"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Calendar">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="crossDissolve" id="Mom-YG-oGy"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="brx-34-yRs">
+                                <rect key="frame" x="67.666666666666686" y="414" width="240" height="62"/>
+                                <color key="backgroundColor" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="62" id="DQa-uX-3Ij"/>
+                                    <constraint firstAttribute="width" constant="240" id="PkT-C5-1VC"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Weekly Schedule">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qpo-i8-css">
+                                <rect key="frame" x="67.666666666666686" y="484" width="240" height="62"/>
+                                <color key="backgroundColor" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="62" id="S85-4t-EPc"/>
+                                    <constraint firstAttribute="width" constant="240" id="cWV-uG-Yns"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Courses">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="liU-8t-k19">
+                                <rect key="frame" x="67.666666666666686" y="554" width="240" height="62"/>
+                                <color key="backgroundColor" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="62" id="cec-81-bbS"/>
+                                    <constraint firstAttribute="width" constant="240" id="rcO-WX-uqG"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Records">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="Qpo-i8-css" firstAttribute="top" secondItem="brx-34-yRs" secondAttribute="bottom" constant="8" id="1Lp-oZ-jGs"/>
+                            <constraint firstItem="liU-8t-k19" firstAttribute="top" secondItem="Qpo-i8-css" secondAttribute="bottom" constant="8" id="HwS-k0-gEh"/>
+                            <constraint firstItem="brx-34-yRs" firstAttribute="centerX" secondItem="tMT-Do-Kns" secondAttribute="centerX" id="Iq0-Lg-5ro"/>
+                            <constraint firstItem="liU-8t-k19" firstAttribute="centerX" secondItem="tMT-Do-Kns" secondAttribute="centerX" id="MmL-AV-VUr"/>
+                            <constraint firstItem="Sw6-g2-oow" firstAttribute="centerX" secondItem="tMT-Do-Kns" secondAttribute="centerX" id="MsN-aO-g5n"/>
+                            <constraint firstItem="brx-34-yRs" firstAttribute="top" secondItem="Sw6-g2-oow" secondAttribute="bottom" constant="8" id="UOe-3l-rP5"/>
+                            <constraint firstItem="QsE-94-ksF" firstAttribute="centerX" secondItem="tMT-Do-Kns" secondAttribute="centerX" id="Vm5-JP-gML"/>
+                            <constraint firstItem="3d2-pX-w1E" firstAttribute="top" secondItem="lma-Sx-n1R" secondAttribute="top" constant="83" id="aB5-ap-z1s"/>
+                            <constraint firstItem="QsE-94-ksF" firstAttribute="top" secondItem="3d2-pX-w1E" secondAttribute="bottom" constant="8" id="ddX-Pb-BE1"/>
+                            <constraint firstItem="Qpo-i8-css" firstAttribute="centerX" secondItem="tMT-Do-Kns" secondAttribute="centerX" id="fnz-aw-Czz"/>
+                            <constraint firstItem="Sw6-g2-oow" firstAttribute="top" secondItem="QsE-94-ksF" secondAttribute="bottom" constant="45" id="hcj-BU-ESk"/>
+                            <constraint firstItem="3d2-pX-w1E" firstAttribute="centerX" secondItem="tMT-Do-Kns" secondAttribute="centerX" id="msw-S1-Hrc"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="lma-Sx-n1R"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LrY-KY-RbO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1188" y="157"/>
+        </scene>
+        <!--View Controller-->
         <scene sceneID="3Kh-Aw-Hx9">
             <objects>
                 <viewController id="Hl6-Pk-95J" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="tVA-Ib-7JP">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="758"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="iCollege" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iWg-NZ-pvz">
@@ -61,9 +160,6 @@
                                 <state key="normal" title="  Calendar">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
-                                <connections>
-                                    <segue destination="BYZ-38-t0r" kind="presentation" id="Da3-LR-BGg"/>
-                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -73,7 +169,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="E9V-ah-TvK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1052" y="150.73891625615764"/>
+            <point key="canvasLocation" x="-1188" y="-563"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -105,7 +201,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="19"/>
                                 <state key="normal" title="Home"/>
                                 <connections>
-                                    <segue destination="Hl6-Pk-95J" kind="showDetail" id="Fww-08-qh3"/>
+                                    <segue destination="mSN-ig-NpV" kind="presentation" modalPresentationStyle="fullScreen" id="puo-ww-GT2"/>
                                 </connections>
                             </button>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="aYg-l0-1g6">
@@ -224,7 +320,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2.3999999999999999" y="147.04433497536945"/>
+            <point key="canvasLocation" x="-178" y="157"/>
         </scene>
         <!--Next View Controller-->
         <scene sceneID="uNp-aa-nvc">
@@ -267,6 +363,7 @@
     <resources>
         <image name="arrowshape.turn.up.left" catalog="system" width="64" height="52"/>
         <image name="arrowshape.turn.up.right" catalog="system" width="64" height="52"/>
+        <image name="iTunesArtwork" width="512" height="512"/>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="Otj-S6-2yZ"/>
