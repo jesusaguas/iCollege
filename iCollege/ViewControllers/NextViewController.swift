@@ -1,5 +1,6 @@
 
 import UIKit
+import CoreData
 
 class NextViewController: UIViewController {
     
@@ -14,9 +15,11 @@ class NextViewController: UIViewController {
     
     
     
-    var result: String!
+    var task: String!
     
     override func viewDidLoad() {
+        getData()
+        textField.text = task
         super.viewDidLoad()
         
         DateLabel.text = dateString
@@ -25,12 +28,30 @@ class NextViewController: UIViewController {
     
 
     @IBAction func SubmitText(_ sender: Any) {
-        writeText()
+        
+        let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
+        let entity = NSEntityDescription.entity(forEntityName: "Entity", in: context)
+        let newEntity = NSManagedObject(entity: entity!, insertInto: context)
+        newEntity.setValue(textField.text, forKey: "task")
+        newEntity.setValue(dateString, forKey: "date")
+        dismiss(animated: true, completion: nil)
+            
     }
     
-    func writeText(){
-        result = textField.text
-        Notes.text = result
-        dismiss(animated: true, completion: nil)
+    func getData(){
+        let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
+        let request = NSFetchRequest<NSFetchRequestResult>(entityName: "Entity")
+        request.returnsObjectsAsFaults = false
+        do{
+            let result = try context.fetch(request)
+            for data in result as! [NSManagedObject]{
+                if data.value(forKey: "date")as! String == dateString{
+                    task = data.value(forKey: "task") as! String
+                }
+                
+            }
+        }catch{
+            print("Error")
+        }
     }
 }
