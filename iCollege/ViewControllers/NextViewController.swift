@@ -2,40 +2,40 @@
 import UIKit
 import CoreData
 
+
+var draw = true
 class NextViewController: UIViewController {
     
 
-    
-    
     @IBOutlet weak var DateLabel: UILabel!
     @IBOutlet weak var textField: UITextField!
+    @IBOutlet weak var Task: UITextView!
     
-
-    @IBOutlet weak var Notes: UILabel!
-    
+    @IBAction func Done(_ sender: Any) {
+        dismiss(animated: true, completion: nil)
+    }
     
     
     var task: String!
     
     override func viewDidLoad() {
         getData()
-        textField.text = task
+        Task.text = task
         super.viewDidLoad()
         
         DateLabel.text = dateString
         
     }
     
-
     @IBAction func SubmitText(_ sender: Any) {
-        
+        Task.text = (Task.text + "- " + textField.text! + "\n")
+        textField.text = nil
         let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
         let entity = NSEntityDescription.entity(forEntityName: "Entity", in: context)
         let newEntity = NSManagedObject(entity: entity!, insertInto: context)
-        newEntity.setValue(textField.text, forKey: "task")
+        newEntity.setValue(Task.text, forKey: "task")
+        print("paso")
         newEntity.setValue(dateString, forKey: "date")
-        dismiss(animated: true, completion: nil)
-            
     }
     
     func getData(){
@@ -46,12 +46,14 @@ class NextViewController: UIViewController {
             let result = try context.fetch(request)
             for data in result as! [NSManagedObject]{
                 if data.value(forKey: "date")as! String == dateString{
-                    task = data.value(forKey: "task") as! String
+                task = data.value(forKey: "task") as? String
+
                 }
-                
+                          
             }
         }catch{
             print("Error")
         }
     }
+    
 }
