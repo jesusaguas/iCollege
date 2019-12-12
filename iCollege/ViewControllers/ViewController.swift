@@ -6,7 +6,11 @@ var dateString = ""
 
 class ViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource {
    
+    @IBAction func GoToCalendar(_ sender: Any) {
+    }
     
+    @IBAction func GoToCourses(_ sender: Any) {
+    }
     
     @IBOutlet weak var Calendar: UICollectionView!
     @IBOutlet weak var MonthLabel: UILabel!

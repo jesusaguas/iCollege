@@ -17,6 +17,8 @@
 		A44409AA23A0D89500417DAB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A44409A923A0D89500417DAB /* Main.storyboard */; };
 		A44409AC23A0D90300417DAB /* DateCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A44409AB23A0D90300417DAB /* DateCollectionViewCell.swift */; };
 		A44409AE23A0D91D00417DAB /* CalendarVars.swift in Sources */ = {isa = PBXBuildFile; fileRef = A44409AD23A0D91D00417DAB /* CalendarVars.swift */; };
+		A49DA42623A1620900019753 /* CoursesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A49DA42523A1620900019753 /* CoursesViewController.swift */; };
+		A49DA42823A1651100019753 /* CoursesPopUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A49DA42723A1651100019753 /* CoursesPopUpViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +34,8 @@
 		A44409A923A0D89500417DAB /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		A44409AB23A0D90300417DAB /* DateCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateCollectionViewCell.swift; sourceTree = "<group>"; };
 		A44409AD23A0D91D00417DAB /* CalendarVars.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarVars.swift; sourceTree = "<group>"; };
+		A49DA42523A1620900019753 /* CoursesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoursesViewController.swift; sourceTree = "<group>"; };
+		A49DA42723A1651100019753 /* CoursesPopUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoursesPopUpViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,8 +70,8 @@
 			children = (
 				C72178CA239F4F680085EB6D /* Calendar */,
 				70C8E50B239F46EB00FA3C9C /* ViewControllers */,
-				702E6367239F418A0075F0F9 /* LaunchScreen.storyboard */,
 				A44409A923A0D89500417DAB /* Main.storyboard */,
+				702E6367239F418A0075F0F9 /* LaunchScreen.storyboard */,
 				702E6365239F418A0075F0F9 /* Assets.xcassets */,
 				70C8E50A239F46B700FA3C9C /* Settings */,
 			);
@@ -90,6 +94,8 @@
 			children = (
 				702E635D239F41880075F0F9 /* ViewController.swift */,
 				A4329DAF23A0EBCC00FC89E0 /* NextViewController.swift */,
+				A49DA42523A1620900019753 /* CoursesViewController.swift */,
+				A49DA42723A1651100019753 /* CoursesPopUpViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -174,7 +180,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A49DA42823A1651100019753 /* CoursesPopUpViewController.swift in Sources */,
 				702E635E239F41880075F0F9 /* ViewController.swift in Sources */,
+				A49DA42623A1620900019753 /* CoursesViewController.swift in Sources */,
 				A4329DB023A0EBCC00FC89E0 /* NextViewController.swift in Sources */,
 				702E6364239F41880075F0F9 /* iCollege.xcdatamodeld in Sources */,
 				702E635A239F41880075F0F9 /* AppDelegate.swift in Sources */,
@@ -326,7 +334,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = jesusaguas.iCollege;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -344,7 +352,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = jesusaguas.iCollege;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
