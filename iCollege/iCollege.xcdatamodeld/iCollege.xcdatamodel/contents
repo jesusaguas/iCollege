@@ -7,7 +7,12 @@
         <attribute name="professor" optional="YES" attributeType="String"/>
         <attribute name="time" optional="YES" attributeType="String"/>
     </entity>
+    <entity name="Entity" representedClassName="Entity" syncable="YES" codeGenerationType="class">
+        <attribute name="date" optional="YES" attributeType="String"/>
+        <attribute name="task" optional="YES" attributeType="String"/>
+    </entity>
     <elements>
         <element name="Courses" positionX="-63" positionY="-18" width="128" height="118"/>
+        <element name="Entity" positionX="-63" positionY="18" width="128" height="73"/>
     </elements>
 </model>
