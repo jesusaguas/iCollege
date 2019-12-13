@@ -1,5 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="15400" systemVersion="19A602" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Entity" representedClassName="Entity" syncable="YES" codeGenerationType="class">
+        <attribute name="date" optional="YES" attributeType="String" defaultValueString=""/>
+        <attribute name="task" optional="YES" attributeType="String"/>
+    </entity>
+    <elements>
+        <element name="Entity" positionX="-63" positionY="-18" width="128" height="73"/>
+    </elements>      
     <entity name="Courses" representedClassName="Courses" syncable="YES" codeGenerationType="class">
         <attribute name="credits" optional="YES" attributeType="String"/>
         <attribute name="location" optional="YES" attributeType="String"/>
