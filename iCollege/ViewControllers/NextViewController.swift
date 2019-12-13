@@ -21,6 +21,7 @@ class NextViewController: UIViewController {
         getData()
         textField.text = task
         super.viewDidLoad()
+        self.hideKeyboardWhenTappedAround()
         
         DateLabel.text = dateString
         
