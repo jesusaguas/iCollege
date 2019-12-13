@@ -216,7 +216,7 @@ class CalendarViewController: UIViewController, UICollectionViewDelegate, UIColl
             
         }
         if highlightDate == indexPath.row {
-            cell.backgroundColor = UIColor.blue
+            cell.backgroundColor = UIColor.systemGray
         }
         
         
@@ -232,9 +232,5 @@ class CalendarViewController: UIViewController, UICollectionViewDelegate, UIColl
         collectionView.reloadData()
         
     }
-
-
-
-
 
 }

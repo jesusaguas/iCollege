@@ -35,7 +35,6 @@ class NextViewController: UIViewController {
         let entity = NSEntityDescription.entity(forEntityName: "Entity", in: context)
         let newEntity = NSManagedObject(entity: entity!, insertInto: context)
         newEntity.setValue(Task.text, forKey: "task")
-        print("paso")
         newEntity.setValue(dateString, forKey: "date")
     }
     
@@ -50,10 +49,14 @@ class NextViewController: UIViewController {
                 task = data.value(forKey: "task") as? String
 
                 }
-                          
             }
-        }catch{
+        } catch{
             print("Error")
+        }
+        do {
+           try context.save()
+          } catch {
+           print("Failed saving")
         }
     }
     
