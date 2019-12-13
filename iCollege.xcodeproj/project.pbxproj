@@ -7,25 +7,43 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		700B25A623A2AE4E00E1B4BE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 700B25A523A2AE4E00E1B4BE /* ViewController.swift */; };
+		700B25A823A2CC2500E1B4BE /* CourseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 700B25A723A2CC2500E1B4BE /* CourseViewController.swift */; };
+		700B25AA23A3088000E1B4BE /* AddCourseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 700B25A923A3087F00E1B4BE /* AddCourseViewController.swift */; };
+		700B25AC23A31ED000E1B4BE /* InfoCourseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 700B25AB23A31ED000E1B4BE /* InfoCourseViewController.swift */; };
 		702E635A239F41880075F0F9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 702E6359239F41880075F0F9 /* AppDelegate.swift */; };
 		702E635C239F41880075F0F9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 702E635B239F41880075F0F9 /* SceneDelegate.swift */; };
-		702E635E239F41880075F0F9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 702E635D239F41880075F0F9 /* ViewController.swift */; };
-		702E6361239F41880075F0F9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 702E635F239F41880075F0F9 /* Main.storyboard */; };
+		702E635E239F41880075F0F9 /* CalendarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 702E635D239F41880075F0F9 /* CalendarViewController.swift */; };
 		702E6364239F41880075F0F9 /* iCollege.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 702E6362239F41880075F0F9 /* iCollege.xcdatamodeld */; };
 		702E6366239F418A0075F0F9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 702E6365239F418A0075F0F9 /* Assets.xcassets */; };
 		702E6369239F418A0075F0F9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 702E6367239F418A0075F0F9 /* LaunchScreen.storyboard */; };
+		A4329DB023A0EBCC00FC89E0 /* NextViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4329DAF23A0EBCC00FC89E0 /* NextViewController.swift */; };
+		A44409AA23A0D89500417DAB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A44409A923A0D89500417DAB /* Main.storyboard */; };
+		A44409AC23A0D90300417DAB /* DateCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A44409AB23A0D90300417DAB /* DateCollectionViewCell.swift */; };
+		A44409AE23A0D91D00417DAB /* CalendarVars.swift in Sources */ = {isa = PBXBuildFile; fileRef = A44409AD23A0D91D00417DAB /* CalendarVars.swift */; };
+		A49DA42623A1620900019753 /* CoursesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A49DA42523A1620900019753 /* CoursesViewController.swift */; };
+		A49DA42823A1651100019753 /* CoursesPopUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A49DA42723A1651100019753 /* CoursesPopUpViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		700B25A523A2AE4E00E1B4BE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		700B25A723A2CC2500E1B4BE /* CourseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseViewController.swift; sourceTree = "<group>"; };
+		700B25A923A3087F00E1B4BE /* AddCourseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddCourseViewController.swift; sourceTree = "<group>"; };
+		700B25AB23A31ED000E1B4BE /* InfoCourseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoCourseViewController.swift; sourceTree = "<group>"; };
 		702E6356239F41880075F0F9 /* iCollege.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iCollege.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		702E6359239F41880075F0F9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		702E635B239F41880075F0F9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		702E635D239F41880075F0F9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		702E6360239F41880075F0F9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		702E635D239F41880075F0F9 /* CalendarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarViewController.swift; sourceTree = "<group>"; };
 		702E6363239F41880075F0F9 /* iCollege.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = iCollege.xcdatamodel; sourceTree = "<group>"; };
 		702E6365239F418A0075F0F9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		702E6368239F418A0075F0F9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		702E636A239F418A0075F0F9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A4329DAF23A0EBCC00FC89E0 /* NextViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NextViewController.swift; sourceTree = "<group>"; };
+		A44409A923A0D89500417DAB /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		A44409AB23A0D90300417DAB /* DateCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateCollectionViewCell.swift; sourceTree = "<group>"; };
+		A44409AD23A0D91D00417DAB /* CalendarVars.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarVars.swift; sourceTree = "<group>"; };
+		A49DA42523A1620900019753 /* CoursesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoursesViewController.swift; sourceTree = "<group>"; };
+		A49DA42723A1651100019753 /* CoursesPopUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoursesPopUpViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,16 +76,49 @@
 		702E6358239F41880075F0F9 /* iCollege */ = {
 			isa = PBXGroup;
 			children = (
-				702E6359239F41880075F0F9 /* AppDelegate.swift */,
-				702E635B239F41880075F0F9 /* SceneDelegate.swift */,
-				702E635D239F41880075F0F9 /* ViewController.swift */,
-				702E635F239F41880075F0F9 /* Main.storyboard */,
-				702E6365239F418A0075F0F9 /* Assets.xcassets */,
+				C72178CA239F4F680085EB6D /* Calendar */,
+				70C8E50B239F46EB00FA3C9C /* ViewControllers */,
+				A44409A923A0D89500417DAB /* Main.storyboard */,
 				702E6367239F418A0075F0F9 /* LaunchScreen.storyboard */,
-				702E636A239F418A0075F0F9 /* Info.plist */,
 				702E6362239F41880075F0F9 /* iCollege.xcdatamodeld */,
+				702E6365239F418A0075F0F9 /* Assets.xcassets */,
+				70C8E50A239F46B700FA3C9C /* Settings */,
 			);
 			path = iCollege;
+			sourceTree = "<group>";
+		};
+		70C8E50A239F46B700FA3C9C /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				702E635B239F41880075F0F9 /* SceneDelegate.swift */,
+				702E6359239F41880075F0F9 /* AppDelegate.swift */,
+				702E636A239F418A0075F0F9 /* Info.plist */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		70C8E50B239F46EB00FA3C9C /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				702E635D239F41880075F0F9 /* CalendarViewController.swift */,
+				A4329DAF23A0EBCC00FC89E0 /* NextViewController.swift */,
+				A49DA42523A1620900019753 /* CoursesViewController.swift */,
+				A49DA42723A1651100019753 /* CoursesPopUpViewController.swift */,
+				700B25A523A2AE4E00E1B4BE /* ViewController.swift */,
+				700B25A723A2CC2500E1B4BE /* CourseViewController.swift */,
+				700B25A923A3087F00E1B4BE /* AddCourseViewController.swift */,
+				700B25AB23A31ED000E1B4BE /* InfoCourseViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		C72178CA239F4F680085EB6D /* Calendar */ = {
+			isa = PBXGroup;
+			children = (
+				A44409AB23A0D90300417DAB /* DateCollectionViewCell.swift */,
+				A44409AD23A0D91D00417DAB /* CalendarVars.swift */,
+			);
+			path = Calendar;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -128,9 +179,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A44409AA23A0D89500417DAB /* Main.storyboard in Resources */,
 				702E6369239F418A0075F0F9 /* LaunchScreen.storyboard in Resources */,
 				702E6366239F418A0075F0F9 /* Assets.xcassets in Resources */,
-				702E6361239F41880075F0F9 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -141,24 +192,25 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				702E635E239F41880075F0F9 /* ViewController.swift in Sources */,
+				700B25A623A2AE4E00E1B4BE /* ViewController.swift in Sources */,
+				700B25AC23A31ED000E1B4BE /* InfoCourseViewController.swift in Sources */,
+				700B25AA23A3088000E1B4BE /* AddCourseViewController.swift in Sources */,
+				A49DA42823A1651100019753 /* CoursesPopUpViewController.swift in Sources */,
+				702E635E239F41880075F0F9 /* CalendarViewController.swift in Sources */,
+				A49DA42623A1620900019753 /* CoursesViewController.swift in Sources */,
+				A4329DB023A0EBCC00FC89E0 /* NextViewController.swift in Sources */,
 				702E6364239F41880075F0F9 /* iCollege.xcdatamodeld in Sources */,
 				702E635A239F41880075F0F9 /* AppDelegate.swift in Sources */,
+				700B25A823A2CC2500E1B4BE /* CourseViewController.swift in Sources */,
+				A44409AE23A0D91D00417DAB /* CalendarVars.swift in Sources */,
 				702E635C239F41880075F0F9 /* SceneDelegate.swift in Sources */,
+				A44409AC23A0D90300417DAB /* DateCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		702E635F239F41880075F0F9 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				702E6360239F41880075F0F9 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		702E6367239F418A0075F0F9 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -290,7 +342,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = HRTG8J2Q2Q;
-				INFOPLIST_FILE = iCollege/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/iCollege/Settings/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -298,7 +350,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = jesusaguas.iCollege;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -308,7 +360,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = HRTG8J2Q2Q;
-				INFOPLIST_FILE = iCollege/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/iCollege/Settings/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -316,7 +368,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = jesusaguas.iCollege;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
