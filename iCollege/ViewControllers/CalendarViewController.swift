@@ -46,7 +46,8 @@ class CalendarViewController: UIViewController, UICollectionViewDelegate, UIColl
         GetStartDateDayPosition()
     }
     
-
+    
+    
     
     func GetStartDateDayPosition() {
         switch Direction{
@@ -186,7 +187,7 @@ class CalendarViewController: UIViewController, UICollectionViewDelegate, UIColl
             cell.isHidden = false
         }
         
-        switch Direction {      //the first cells that needs to be hidden (if needed) will be negative or zero so we can hide them
+        switch Direction {
         case 0:
             cell.DateLabel.text = "\(indexPath.row + 1 - NumberOfEmptyBox)"
         case 1:
@@ -197,11 +198,11 @@ class CalendarViewController: UIViewController, UICollectionViewDelegate, UIColl
             fatalError()
         }
         
-        if Int(cell.DateLabel.text!)! < 1{ //here we hide the negative numbers or zero
+        if Int(cell.DateLabel.text!)! < 1{
             cell.isHidden = true
         }
         
-        switch indexPath.row { //weekend days color
+        switch indexPath.row {
         case 5,6,12,13,19,20,26,27,33,34:
             if Int(cell.DateLabel.text!)! > 0 {
                 cell.DateLabel.textColor = UIColor.lightGray
@@ -217,6 +218,7 @@ class CalendarViewController: UIViewController, UICollectionViewDelegate, UIColl
         if highlightDate == indexPath.row {
             cell.backgroundColor = UIColor.blue
         }
+        
         
         
         return cell
