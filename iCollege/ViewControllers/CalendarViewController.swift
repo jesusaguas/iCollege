@@ -36,7 +36,8 @@ class CalendarViewController: UIViewController, UICollectionViewDelegate, UIColl
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        self.hideKeyboardWhenTappedAround()
+
         currentMonth = Months[month]
         MonthLabel.text = "\(currentMonth) \(year)"
         if weekday == 0 {

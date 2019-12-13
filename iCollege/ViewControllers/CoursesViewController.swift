@@ -23,6 +23,8 @@ class CoursesViewController: UIViewController {
     
     
     override func viewDidLoad() {
+        super.viewDidLoad()
+        self.hideKeyboardWhenTappedAround()
         
         if Course1.text == ""{
             Course1.text = newCourse
@@ -39,8 +41,6 @@ class CoursesViewController: UIViewController {
         }
         
         
-        
-        super.viewDidLoad()
 
         
     }
